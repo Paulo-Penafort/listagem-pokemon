@@ -1,0 +1,122 @@
+ body {
+    font-family: 'poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+ }
+
+ body.modo-escuro {
+    background-color: var(--bg-dark-mod);
+    color: var(--text-dark-mod);
+ }
+
+ header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+ }
+
+ header .logo,
+ header .imagem-botao {
+    width: 30px;
+    transition: 0.2s ease-in-out;
+ }
+
+ header #botao-alterar-tema {
+    background: none;
+    border: none;
+ }
+
+ header .logo:hover,
+ header .imagem-botao:hover,
+ main .cartao-pokemon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+ }
+
+ main {
+    padding: 25px;
+ }
+
+ main .listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+ }
+
+ main .cartao-pokemon {
+    background-color: var(--bg-card);
+    width: 200px;
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+ }
+
+ main .cartao-pokemon:hover {
+    background-color: var(--color-hover-card);
+ }
+
+ .modo-escuro .cartao-pokemon {
+    background-color: var(--bg-darkmod-card);
+ }
+
+ main .cartao-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+ }
+
+ main .cartao-pokemon .informacoes span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+ }
+
+ main .cartao-pokemon .gif {
+    width: 90px;
+    height: 90px;
+ }
+
+ main .cartao-pokemon .tipos {
+    display: flex;
+    gap: 15px;
+ }
+
+ main .cartao-pokemon .tipo {
+    padding: 8px;
+    border-radius: 10px;
+ }
+
+ .grama {
+    background-color: var(--cor-grama);
+ }
+
+ .veneno {
+    background-color: var(--cor-veneno);
+ }
+
+ .fogo {
+    background-color: var(--cor-fogo);
+ }
+
+ .agua {
+    background-color: var(--cor-agua);
+ }
+
+ .inseto {
+    background-color: var(--cor-inseto);
+ }
+
+ main .descricao {
+    overflow-y: scroll;
+    max-height: 80px;
+    font-size: 14px;
+    padding-right: 10px;
+ }
